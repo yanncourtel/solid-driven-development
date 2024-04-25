@@ -1,0 +1,40 @@
+[debug] > Exec({file:/C:/git/substitution-detection/housing/}root/test, None, None)
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\git\substitution-detection\housing\target\scala-2.13\test-classes ...
+[info] done compiling
+[info] HouseBuilderSpec:
+[info] TraditionalHouseBuilder
+[info] - should follow the correct building sequence *** FAILED ***
+[info]   Right(true) was not equal to false (HouseBuilderSpec.scala:32)
+[info] WoodChaletBuilder
+[info] - should follow the correct building sequence *** FAILED ***
+[info]   "[]" was not equal to "[Access road built.
+[info]   Concrete base built.
+[info]   Assembling wood chalet.]" (HouseBuilderSpec.scala:38)
+[info] StoneHouseBuilder
+[info] - should follow the correct building sequence *** FAILED ***
+[info]   "[]" was not equal to "[Access road built.
+[info]   Concrete base built.
+[info]   Assembling stone house.]" (HouseBuilderSpec.scala:45)
+[info] ModernConcreteHouseBuilder
+[info] - should follow the correct building sequence *** FAILED ***
+[info]   "[]" was not equal to "[Access road built.
+[info]   Concrete base built.
+[info]   Assembling modern concrete house.]" (HouseBuilderSpec.scala:52)
+[info] TinyHouseBuilder
+[info] - should follow a modified building sequence without a concrete base *** FAILED ***
+[info]   "[]" was not equal to "[Access road built.
+[info]   Assembling tiny house with screw system.]" (HouseBuilderSpec.scala:59)
+[info] Run completed in 459 milliseconds.
+[info] Total number of tests run: 5
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 0, failed 5, canceled 0, ignored 0, pending 0
+[info] *** 5 TESTS FAILED ***
+[error] Failed tests:
+[error] 	house.HouseBuilderSpec
+[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 2 s, completed 25-Apr-2024 15:45:03
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

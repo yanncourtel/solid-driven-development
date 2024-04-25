@@ -1,0 +1,81 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(87324839-1553-4e54-9059-a17f1e3aea92), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\git\substitution-detection\housing\untitled\target\scala-3.4.1\test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: C:\git\substitution-detection\housing\untitled\src\test\scala\house\HouseBuilderTest.scala:10:33 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m10 |[0m  [33mvar[0m [36moriginalOut[0m: [35mPrintStream[0m = _[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                 ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m`= _` has been deprecated; use `= uninitialized` instead.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m`uninitialized` can be imported with `scala.compiletime.uninitialized`.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: C:\git\substitution-detection\housing\untitled\src\test\scala\house\HouseBuilderTest.scala:11:39 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m11 |[0m  [33mvar[0m [36mtestOut[0m: [35mByteArrayOutputStream[0m = _[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                       ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m`= _` has been deprecated; use `= uninitialized` instead.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m`uninitialized` can be imported with `scala.compiletime.uninitialized`.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mHouseBuilderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Traditional house building sequence should be correct *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[]" did not equal "[Access road built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Concrete base built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Assembling traditional house.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ]" (HouseBuilderTest.scala:26)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[]" -> "[Access road built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mConcrete base built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mAssembling traditional house.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m]"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Wood chalet building sequence should be correct *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[]" did not equal "[Access road built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Concrete base built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Assembling wood chalet.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ]" (HouseBuilderTest.scala:32)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[]" -> "[Access road built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mConcrete base built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mAssembling wood chalet.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m]"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Stone house building sequence should be correct *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[]" did not equal "[Access road built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Concrete base built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Assembling stone house.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ]" (HouseBuilderTest.scala:38)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[]" -> "[Access road built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mConcrete base built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mAssembling stone house.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m]"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Modern concrete house building sequence should be correct *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[]" did not equal "[Access road built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Concrete base built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Assembling modern concrete house.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ]" (HouseBuilderTest.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[]" -> "[Access road built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mConcrete base built.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mAssembling modern concrete house.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m]"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Tiny house building sequence should be correct *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.UnsupportedOperationException: Cannot build concrete base for tiny houses.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at house.TinyHouseBuilder.buildBase(HouseBuilder.scala:32)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at house.HouseBuilder.buildHouse(HouseBuilder.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at house.HouseBuilderTest.testFun$proxy5$1(HouseBuilderTest.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at house.HouseBuilderTest.$init$$$anonfun$7(HouseBuilderTest.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 298 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 5, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 5 TESTS FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	house.HouseBuilderTest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 3 s, completed 25 Apr 2024, 12:08:34[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

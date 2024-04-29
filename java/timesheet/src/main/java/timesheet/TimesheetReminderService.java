@@ -1,5 +1,8 @@
 package timesheet;
 
+import java.time.LocalDateTime;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class TimesheetReminderService {
@@ -13,7 +16,7 @@ public class TimesheetReminderService {
         List<Worker> activeWorkers = employeeRepository.findActiveWorkers();
         activeWorkers
                 .stream()
-                .filter(emp -> new TimesheetService().hasTimesheets(emp))
+                .filter(emp -> !new TimesheetService().hasTimesheets(emp, LocalDateTime.now()))
                 .map(employee -> emailFor(employee))
                 .forEach(email -> new EmailSender().send(email));
     }

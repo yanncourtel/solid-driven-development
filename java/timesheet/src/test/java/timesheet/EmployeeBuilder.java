@@ -8,6 +8,7 @@ public class EmployeeBuilder {
     private String lastName = "Doe";
     private LocalDate dateOfBirth = LocalDate.of(1980, 9, 10);
     private String email = "john.doe@foobar.com";
+    private Timesheet timesheet = new Timesheet(0);
 
     public static EmployeeBuilder anEmployee(){
         return new EmployeeBuilder();
@@ -33,9 +34,13 @@ public class EmployeeBuilder {
         this.dateOfBirth = dateOfBirth;
         return this;
     }
+    public EmployeeBuilder lastTimesheetAsOf(int monthNumber) {
+        this.timesheet = new Timesheet(monthNumber);
+        return this;
+    }
 
     public Employee build(){
-        return new Employee(firstName, lastName, dateOfBirth, email);
+        return new Employee(firstName, lastName, dateOfBirth, email, timesheet);
     }
 
 }

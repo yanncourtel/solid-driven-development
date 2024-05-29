@@ -20,6 +20,7 @@ public class Freelancer implements Worker {
     }
 
     public void work() { /* Some freelance work */ }
+    
     public Timesheet getTimesheet() {
         throw new UnsupportedOperationException("Freelancer doesn't support timesheets.");
     }

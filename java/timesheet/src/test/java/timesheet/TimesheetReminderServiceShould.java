@@ -19,6 +19,7 @@ import static org.mockito.BDDMockito.given;
 class TimesheetReminderServiceShould {
     private static final int CURRENT_MONTH = 7;
     private static final int CURRENT_DAY_OF_MONTH = 9;
+    //To mock today's date in future tests
     private static final MonthDay TODAY = MonthDay.of(CURRENT_MONTH, CURRENT_DAY_OF_MONTH);
     private final ByteArrayOutputStream consoleContent = new ByteArrayOutputStream();
     @Mock
@@ -27,7 +28,7 @@ class TimesheetReminderServiceShould {
     private TimesheetReminderService timesheetReminderService;
 
     @Test
-    void should_send_timesheet_notification_by_email_to_employee() {
+    void send_timesheet_notification_by_email_to_employee() {
         System.setOut(new PrintStream(consoleContent));
         Employee employee = EmployeeBuilder.anEmployee().lastTimesheetAsOf(0).build();
         given(employeeRepository.findActiveWorkers()).willReturn(Collections.singletonList(employee));
@@ -39,7 +40,7 @@ class TimesheetReminderServiceShould {
                 .isEqualTo("To:" + employee.getEmail() + ", Subject: Your timesheet is missing!!, Message: You have some timesheet missing. Please hurry to send them. " + employee.getFirstName() + "!");
     }
     @Test
-    void should_not_send_timesheet_notification_by_email_to_employee_if_submitted() {
+    void not_send_timesheet_notification_by_email_to_employee_if_submitted() {
         var thisMounth = LocalDateTime.now().getMonthValue();
         System.setOut(new PrintStream(consoleContent));
         Employee employee = EmployeeBuilder.anEmployee().lastTimesheetAsOf(thisMounth).build();
@@ -52,7 +53,7 @@ class TimesheetReminderServiceShould {
                 .isEqualTo("");
     }
     @Test
-    void should_send_timesheet_notification_by_email_to_freelancer() {
+    void send_timesheet_notification_by_email_to_freelancer() {
         System.setOut(new PrintStream(consoleContent));
         Freelancer employee = FreelancerBuilder.aFreelancer().build();
         given(employeeRepository.findActiveWorkers()).willReturn(Collections.singletonList(employee));
